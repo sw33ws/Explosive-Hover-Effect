@@ -1,0 +1,62 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.text:has(.fancy:hover) .word:not(.fancy:hover) {
+    opacity: 0.2;
+}
+
+.line {
+    display: flex;
+    justify-content: space-between;
+}
+
+p {
+    color: white;
+    font-size: 8vw;
+    font-family: "Rubik", sans-serif;
+    margin: 0rem;
+    text-transform: uppercase;
+}
+
+p > a {
+    text-decoration: none;
+    color: white;
+}
+
+.fancy > .letter {
+    display: inline-block;
+    transition: transform 350ms ease;
+}
+
+.fancy:hover > .letter {
+    transition-duration: 800ms;
+}
+
+.fancy:hover > .letter:nth-child(1) {
+    transform: translate(20%, 20%) rotate(-10deg);
+}
+
+.fancy:hover > .letter:nth-child(2) {
+    transform: translate(20%, -10%) rotate(8deg);
+}
+
+.fancy:hover > .letter:nth-child(3) {
+    transform: translate(30%, -20%) rotate(8deg);
+}
+
+.fancy:hover > .letter:nth-child(4) {
+    transform: translate(50%, -20%) rotate(10deg);
+}
+
+.fancy:hover > .letter:nth-child(5) {
+    transform: translate(30%, -10%) rotate(12deg);
+}
+
+.fancy:hover > .letter:nth-child(6) {
+    transform: translate(20%, 0%) rotate(14deg);
+}
